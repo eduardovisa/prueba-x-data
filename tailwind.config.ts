@@ -9,7 +9,22 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'input-label': '#9FA2B4',
+        'input-placeholder': '#4B506D',
+        'input-bg': '#FCFDFE',
+        'input-border': '#F0F1F7',
+      },
+      width: {
+        '316': '316px',
+        '536': '536px',
+      },
+      height: {
+        '42': '42px',
+      },
+    },
+    fontFamily: {},
   },
   plugins: [],
 };

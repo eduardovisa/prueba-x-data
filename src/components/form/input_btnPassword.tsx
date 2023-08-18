@@ -1,5 +1,5 @@
-import { EyeCLose, EyeOpen } from '@/svg';
-import { InputPasswordProps } from '@/types/components';
+import { EyeCLose, EyeOpen } from '@/svg/eye';
+import { InputPasswordProps } from '@/types/components/login';
 
 const InputPassword: React.FC<InputPasswordProps> = ({
   isPasswordVisible,
@@ -8,6 +8,7 @@ const InputPassword: React.FC<InputPasswordProps> = ({
 
   return (
     <button
+      type='button'
       className="absolute inset-y-0 right-0 flex items-center px-4 text-gray-600"
       onClick={setPasswordVisibility}
     >

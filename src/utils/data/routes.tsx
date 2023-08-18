@@ -14,7 +14,7 @@ const routes: RoutesProps[] = [
   {
     label: 'Overview',
     icon: <OverviewIcon />,
-    path: '#',
+    path: '/overview',
   },
   {
     label: 'Tickets',

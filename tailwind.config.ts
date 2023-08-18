@@ -20,6 +20,8 @@ module.exports = {
         'primary-bg-black': '#363740',
         'primary-blue': '#3751FF',
         'primary-white': '#DDE2FF',
+        'primary-gray': '#F7F8FC',
+        'primary-gray-light': '#DFE0EB',
       },
       width: {
         '316': '316px',
@@ -30,6 +32,7 @@ module.exports = {
       height: {
         '42': '42px',
         '48': '48px',
+        '134': '134px',
         '582': '582px',
         '710': '710px',
       },

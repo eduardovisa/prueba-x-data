@@ -12,4 +12,4 @@ export type InputPasswordProps = {
 
 export type LoginLayoutProps = {
   children: JSX.Element | JSX.Element[];
-}
+};

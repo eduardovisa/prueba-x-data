@@ -8,7 +8,7 @@ import {
   SubscriptionIcon,
   TicketsIcon,
 } from '@/svg/routes_icons';
-import RoutesProps from '@/types/routes_types';
+import RoutesProps from '@/types/data/routes_types';
 
 const routes: RoutesProps[] = [
   {

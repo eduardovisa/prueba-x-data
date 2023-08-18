@@ -1,14 +1,14 @@
 import { useRouter } from 'next/router';
-import { DividerIcon } from '@/svg/divider';
+import { DividerHorizontalIcon } from '@/svg/divider';
 import { NavIcon } from '@/svg/routes_icons';
 import Link from 'next/link';
-import RoutesProps from '@/types/routes_types';
+import RoutesProps from '@/types/data/routes_types';
 
 const navList = (routes: RoutesProps[], isExtra?: boolean) => {
   const router = useRouter();
   let nav_list: JSX.Element[] = [];
 
-  isExtra && nav_list.push(<DividerIcon key={`divider-nav`} />);
+  isExtra && nav_list.push(<DividerHorizontalIcon key={`divider-nav`} />);
 
   routes.map((route, index) => {
     nav_list.push(

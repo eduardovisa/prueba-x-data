@@ -1,13 +1,7 @@
+import { NavIconProps } from '@/types/components/nav';
+
 // Return the icon
-export const NavIcon = ({
-  children,
-  color,
-  opacity,
-}: {
-  children: JSX.Element;
-  color: string;
-  opacity: string;
-}) => {
+export const NavIcon = ({ children, color, opacity }: NavIconProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

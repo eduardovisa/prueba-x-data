@@ -1,12 +1,12 @@
 import { LogoNav } from '@/svg/logo';
-import { NavLayoutProps } from '@/types/components/dashboard';
+import { NavLayoutProps } from '@/types/components/nav';
 import menuDesktop from '../nav/nav_desktop';
 import routes from '@/utils/data/routes';
 
 const NavLayout = ({ children }: NavLayoutProps) => {
   return (
     <div className="flex">
-      <div className="flex flex-col flex-none h-screen sm:w-[76px] lg:w-[255px] bg-primary-bg-black">
+      <div className="flex flex-col flex-none sm:w-[76px] lg:w-[255px] bg-primary-bg-black">
         <div className="flex sm:mb-6 sm:mt-6 items-center justify-center">
           <div className="flex-none w-20 hidden sm:block">
             <a href="#" className="flex items-center justify-center">

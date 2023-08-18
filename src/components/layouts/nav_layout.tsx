@@ -1,5 +1,5 @@
 import { LogoNav } from '@/svg/logo';
-import { NavLayoutProps } from '@/types/components/dashboard';
+import { NavLayoutProps } from '@/types/components/nav';
 import menuDesktop from '../nav/nav_desktop';
 import routes from '@/utils/data/routes';
 

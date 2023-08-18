@@ -15,10 +15,10 @@ const DesktopHeader = ({ label, userName, userImg }: HeaderProps) => {
         </h1>
       </div>
       <div className="flex flex-none justify-end items-center">
-        <div className="pr-5">
+        <div className="pr-5 cursor-pointer">
           <SearchIcon />
         </div>
-        <div className="pr-5">
+        <div className="pr-5 cursor-pointer">
           <BellIcon />
         </div>
         <div className="pr-6 pl-6">
@@ -30,7 +30,7 @@ const DesktopHeader = ({ label, userName, userImg }: HeaderProps) => {
           </h1>
         </div>
         <div
-          className={`rounded-full bg-center bg-cover bg-no-repeat`}
+          className={`rounded-full bg-center bg-cover bg-no-repeat cursor-pointer`}
           style={{ ...imageClass }}
         >
           <CircleUserImg />

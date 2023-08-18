@@ -2,7 +2,7 @@ import { useRouter } from 'next/router';
 import { DividerHorizontalIcon } from '@/svg/divider';
 import { NavIcon } from '@/svg/routes_icons';
 import Link from 'next/link';
-import RoutesProps from '@/types/routes_types';
+import RoutesProps from '@/types/data/routes_types';
 
 const navList = (routes: RoutesProps[], isExtra?: boolean) => {
   const router = useRouter();

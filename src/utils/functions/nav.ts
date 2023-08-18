@@ -1,4 +1,4 @@
-import RoutesProps from '@/types/routes_types';
+import RoutesProps from '@/types/data/routes_types';
 
 export const checkRoutes = (routes: RoutesProps[]) => {
   let mainRoutes: RoutesProps[] = [];

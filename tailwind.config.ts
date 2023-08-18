@@ -19,6 +19,7 @@ module.exports = {
         'primary-black': '#252733',
         'primary-bg-black': '#363740',
         'primary-blue': '#3751FF',
+        'primary-white': '#DDE2FF',
       },
       width: {
         '316': '316px',

@@ -1,4 +1,4 @@
-export const DividerIcon = () => {
+export const DividerHorizontalIcon = () => {
   return (
     <svg
       key={`divider-nav`}
@@ -12,6 +12,20 @@ export const DividerIcon = () => {
       <g opacity="0.06">
         <path d="M0 1H255" stroke="#DFE0EB" />
       </g>
+    </svg>
+  );
+};
+
+export const DividerVerticalIcon = () => {
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="2"
+      height="32"
+      viewBox="0 0 2 32"
+      fill="none"
+    >
+      <path d="M1 0V32" stroke="#DFE0EB" />
     </svg>
   );
 };

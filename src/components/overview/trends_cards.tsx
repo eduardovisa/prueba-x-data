@@ -7,7 +7,7 @@ const TrendsCards: React.FC<{ data: CardsProps[] }> = (data) => {
     card_list.push(
       <div
         key={`card-info-overview-${index}`}
-        className="flex item-center justify-center flex-col items-center border bg-white border-primary-gray-light h-["
+        className="flex item-center justify-center flex-col items-center border bg-white border-primary-gray-light"
       >
         <div className="flex-1">
           <h1 className="text-[16px] font-[600] text-secondary-gray-light tracking-[0.3px] mt-6 leading-[22px]">

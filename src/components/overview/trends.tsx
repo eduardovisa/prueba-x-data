@@ -1,15 +1,14 @@
 import { CardsProps } from '@/types/data/overview';
 import TrendsCards from './trends_cards';
-import imgGraph from '@/assets/graph.png';
 import { DividerMini } from '@/svg/divider';
+import imgGraph from '@/assets/graph.png';
 
 const Trends: React.FC<{ data: CardsProps[] }> = (data) => {
-  const img = imgGraph;
   return (
     <div className="flex mt-10 border rounded-[8px] bg-white border-primary-gray-light justify-center">
       <div className="flex-1 flex flex-col m-10">
         <div className="flex-none">
-          <h1 className="text-[19px] font-[700] text-primary-black tracking-[0.4px] leading-normal">
+          <h1 className="text-[19px] font-[700] text-primary-black mb-2 tracking-[0.4px] leading-normal">
             Today’s trends
           </h1>
           <h1 className="text-[12px] font-[400] text-secondary-gray-light tracking-[0.1px] leading-[16px]">
@@ -32,9 +31,9 @@ const Trends: React.FC<{ data: CardsProps[] }> = (data) => {
         </div>
         <div
           className={`flex-1 h-full w-full bg-center bg-contain bg-no-repeat`}
-          style={{ backgroundImage: `url(${img.src})`, width: '100%' }}
+          style={{ backgroundImage: `url(${imgGraph.src})`, width: '100%' }}
         >
-          <img className="sm:hidden" src={img.src} alt="" />
+          <img className="sm:hidden" src={imgGraph.src} alt="" />
         </div>
       </div>
       <div className="flex-none">

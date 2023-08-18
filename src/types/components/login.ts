@@ -1,5 +1,5 @@
 export type InputProps = {
-  key: string;
+  name: string;
   type: string;
   placeholder: string;
   label?: string;
@@ -10,11 +10,6 @@ export type InputPasswordProps = {
   setPasswordVisibility: () => void;
 };
 
-export type HeadingProps = {
-  label: string;
-  fontSize: string;
-  fontWeight: string;
-  textColor: string;
-  spacing: string;
-  mb: string;
-};
+export type LoginLayoutProps = {
+  children: JSX.Element | JSX.Element[];
+}

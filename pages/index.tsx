@@ -1,4 +1,8 @@
+import Login from '@/components/login_form';
+
 const index = () => {
-  return <div>index</div>;
+  
+  return <Login />;
 };
+
 export default index;

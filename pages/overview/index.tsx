@@ -3,6 +3,10 @@ import { simpleCardsData } from '@/utils/data/overview/simple_cards_data';
 import Trends from '@/components/overview/trends';
 import SimpleCards from '@/components/overview/simple_cards';
 import ContentLayout from '@/components/layouts/content_layout';
+import Tickets from '@/components/overview/tickets';
+import { ticketsData } from '@/utils/data/overview/tickets';
+import Tasks from '@/components/overview/tasks';
+import { tasksData } from '@/utils/data/overview/tasks';
 
 const index = () => {
   return (
@@ -13,6 +17,14 @@ const index = () => {
     >
       <SimpleCards data={simpleCardsData} />
       <Trends data={trendsData} />
+      <div className="mt-10 grid gap-4 grid-cols-1 lg:grid-cols-2">
+        <div>
+          <Tickets data={ticketsData} />
+        </div>
+        <div>
+          <Tasks data={tasksData} />
+        </div>
+      </div>
     </ContentLayout>
   );
 };

@@ -8,8 +8,8 @@ const Login = () => {
 
   const redirigir = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    loginUser();
-    router.push('/overview');
+
+    loginUser(event.target) && router.push('/overview');
   };
 
   return (
@@ -35,6 +35,7 @@ const Login = () => {
       >
         Log In
       </button>
+      <div id="errorEmail"></div>
       <div className="flex items-center justify-center">
         <p className="text-[14px] font-light text-input-label">
           Don’t have an account yet?{' '}

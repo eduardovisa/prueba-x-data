@@ -1,10 +1,10 @@
-import { useRouter } from 'next/router';
 import { DividerHorizontalIcon } from '@/svg/divider';
 import { NavIcon } from '@/svg/routes_icons';
 import Link from 'next/link';
 import RoutesProps from '@/types/data/routes_types';
+import { useRouter } from 'next/router';
 
-const navList = (routes: RoutesProps[], isExtra?: boolean) => {
+const NavList = (routes: RoutesProps[], isExtra?: boolean) => {
   const router = useRouter();
   let nav_list: JSX.Element[] = [];
 
@@ -24,10 +24,11 @@ const navList = (routes: RoutesProps[], isExtra?: boolean) => {
           <div className="flex-none w-20 hidden sm:block">
             <div className="flex items-center justify-center text-white">
               <NavIcon
-                children={route.icon}
                 color={`${router.pathname == route.path ? 'white' : '#9FA2B4'}`}
                 opacity={`${router.pathname == route.path ? '1' : '0.4'}`}
-              />
+              >
+                {route.icon}
+              </NavIcon>
             </div>
           </div>
           <div className="hidden lg:block flex-1">
@@ -49,4 +50,4 @@ const navList = (routes: RoutesProps[], isExtra?: boolean) => {
   return nav_list;
 };
 
-export default navList;
+export default NavList;

@@ -2,6 +2,7 @@ import { CardsProps } from '@/types/data/overview';
 import TrendsCards from './trends_cards';
 import { DividerMini } from '@/svg/divider';
 import imgGraph from '@/assets/graph.png';
+import Image from 'next/image';
 
 const Trends: React.FC<{ data: CardsProps[] }> = (data) => {
   return (
@@ -33,7 +34,12 @@ const Trends: React.FC<{ data: CardsProps[] }> = (data) => {
           className={`flex-1 h-full w-full bg-center bg-contain bg-no-repeat`}
           style={{ backgroundImage: `url(${imgGraph.src})`, width: '100%' }}
         >
-          <img className="sm:hidden" src={imgGraph.src} alt="" />
+          <Image
+            className="sm:hidden"
+            src={imgGraph}
+            alt=""
+            objectFit="contain"
+          />
         </div>
       </div>
       <div className="flex-none">

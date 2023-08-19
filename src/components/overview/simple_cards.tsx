@@ -8,7 +8,7 @@ const SimpleCards: React.FC<{ data: CardsProps[] }> = (data) => {
     card_list.push(
       <div
         key={`card-info-overview-${index}`}
-        className="flex item-center justify-center w-[194px] h-134 sm:w-[298px] lg:w-[258px] cursor-pointer flex-col items-center border rounded-[8px] bg-white border-primary-gray-light hover:border-primary-blue hover:border-2 group"
+        className="flex justify-center  h-134 cursor-pointer flex-col items-center border rounded-[8px] bg-white border-primary-gray-light hover:border-primary-blue hover:border-2 group"
       >
         <div className="flex-1">
           <h1 className="text-[19px] font-[700] text-secondary-gray-light tracking-[0.4px] mt-6 leading-normal group-hover:text-primary-blue">
@@ -25,7 +25,7 @@ const SimpleCards: React.FC<{ data: CardsProps[] }> = (data) => {
   });
 
   return (
-    <div className="w-full mt-10 grid grid-cols-2 lg:grid-cols-4 gap-1 sm:gap-4 place-items-center">
+    <div className="flex justify-between w-full mt-10 grid grid-cols-2 lg:grid-cols-4 gap-1 sm:gap-4 justify-items-stretch">
       {card_list}
     </div>
   );

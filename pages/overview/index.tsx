@@ -1,6 +1,6 @@
 import { trendsData } from '@/utils/data/overview/trends';
 import { simpleCardsData } from '@/utils/data/overview/simple_cards_data';
-import Trends from '@/components/overview/trends';
+import Trends from '@/components/overview/trends/trends';
 import SimpleCards from '@/components/overview/simple_cards';
 import ContentLayout from '@/components/layouts/content_layout';
 import Tickets from '@/components/overview/tickets';

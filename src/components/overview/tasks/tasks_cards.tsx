@@ -1,5 +1,5 @@
-import { CheckBoxCompleted, CheckBoxIncompleted } from '@/svg/buttons';
 import { CardsProps, TasksProps } from '@/types/data/overview';
+import { CheckBoxCompleted, CheckBoxIncompleted } from '@/svg/buttons';
 import TaskBadge from './task_badge';
 
 const TasksCards: React.FC<{ data: (CardsProps & TasksProps)[] }> = (data) => {
@@ -19,7 +19,7 @@ const TasksCards: React.FC<{ data: (CardsProps & TasksProps)[] }> = (data) => {
             {info.label}
           </h1>
         </div>
-        <div className="flex-1 flex justify-end items-center">
+        <div className="flex-none flex justify-end items-center">
           {TaskBadge(info.secondaryLabel)}
         </div>
       </div>

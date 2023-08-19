@@ -1,7 +1,7 @@
 import { CardsProps } from '@/types/data/overview';
 import TrendsCards from './trends_cards';
 import { DividerMini } from '@/svg/divider';
-import imgGraph from '@/assets/graph.png';
+import imgGraph from '@/assets/trends_graph.png';
 import Image from 'next/image';
 
 const Trends: React.FC<{ data: CardsProps[] }> = (data) => {

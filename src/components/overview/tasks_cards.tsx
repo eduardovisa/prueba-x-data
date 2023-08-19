@@ -11,7 +11,7 @@ const TasksCards: React.FC<{ data: (CardsProps & TasksProps)[] }> = (data) => {
         key={`card-info-tickets-${index}`}
         className="flex justify-between bg-white items-center mb-4 pr-10 pl-10"
       >
-        <div className="flex-none mt-6 mr-4">
+        <div className="flex-none mt-6 mr-4 cursor-pointer">
           {info.completed ? <CheckBoxCompleted /> : <CheckBoxIncompleted />}
         </div>
         <div className="flex-auto">

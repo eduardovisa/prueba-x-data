@@ -6,7 +6,7 @@ import { loginUser } from '@/utils/functions/login';
 const Login = () => {
   return (
     <LoginLayout>
-      <a href="#" className="flex items-center mb-2">
+      <a href="/" className="flex items-center mb-2">
         <LogoLogin />
       </a>
       <h1 className="text-[19px] font-[700] text-secondary-gray/70 tracking-[0.4px] mb-6 leading-normal">

@@ -6,7 +6,7 @@ import InputPassword from './input_btnPassword';
 const Input = (props: InputProps) => {
   const { name, type, label, placeholder, ...rest } = props;
   const [isPasswordVisible, setIsPasswordVisible] = useState(false);
-  const isPasswordType = (type == 'password');
+  const isPasswordType = type == 'password';
 
   return (
     <div>
@@ -20,12 +20,18 @@ const Input = (props: InputProps) => {
               {label}
             </label>
           </div>
-          {isPasswordType && <a href="#" className="text-[10px] text-secondary-gray-light">Forgot password?</a>}
+          {isPasswordType && (
+            <a href="#" className="text-[10px] text-secondary-gray-light">
+              Forgot password?
+            </a>
+          )}
         </div>
       )}
       <div className="relative">
         <input
-          type={isPasswordType ? (isPasswordVisible ? 'text' : 'password') : type}
+          type={
+            isPasswordType ? (isPasswordVisible ? 'text' : 'password') : type
+          }
           name={name}
           id={name}
           placeholder={placeholder}

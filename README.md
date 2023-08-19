@@ -1,34 +1,52 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Prueba Técnica: Interfaz Responsiva con Next.js, Tailwind CSS y TypeScript
 
-## Getting Started
+Este proyecto es parte de una prueba técnica en la que se desarrolló una interfaz de usuario basada en un diseño proporcionado en Figma. La interfaz es completamente responsiva y se adapta a tres dispositivos: Smartphone, Tablet y Escritorio. El proyecto está construido utilizando Next.js, Tailwind CSS y TypeScript.
 
-First, run the development server:
+## Objetivo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+El objetivo principal de este proyecto es crear una interfaz de usuario sin funcionalidad. La única funcionalidad requerida es que el botón "Log in" navegue a la página de inicio para fines de demostración.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Librerías y Herramientas
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+El proyecto utiliza las siguientes tecnologías y herramientas:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- Next.js (React) para la creación del proyecto.
+- Tailwind CSS para la construcción de estilos.
+- DaisyUI como extensión de Tailwind CSS para la creación de componentes. (También se permite la creación directa de componentes con Tailwind CSS).
+- TypeScript para la tipificación estática.
 
-## Learn More
+## Criterios de Aceptación
 
-To learn more about Next.js, take a look at the following resources:
+- El producto final debe coincidir en medidas, fuentes y tamaños de fuente con el diseño proporcionado en Figma.
+- La interfaz debe ser responsiva y adaptarse a tres dispositivos: Smartphone, Tablet y Escritorio.
+- Se deben crear todos los componentes utilizando classNames de Tailwind CSS, evitando el uso de archivos .css.
+- Se debe mantener el código legible y organizado. Se sugiere separar los componentes en archivos individuales, evitando exceder las 50 líneas por archivo.
+- La estructura de directorios debe seguir las convenciones y se sugiere la organización en carpetas como `pages`, `src/components`, `src/hooks`, `src/utils`, `src/types`, etc.
+- No es necesario completar el 100% del ejercicio, dado el plazo de tiempo limitado. El proyecto incompleto servirá como referencia para identificar áreas de mejora y crecimiento.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Live Preview
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+Puedes ver una vista previa en vivo del proyecto en [https://eduardo-visa-prueba-x-data.netlify.app/](https://eduardo-visa-prueba-x-data.netlify.app/).
 
-## Deploy on Vercel
+## Iniciar Sesión
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Para fines de demostración, se pueden utilizar las siguientes credenciales para iniciar sesión:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- Email: x-data@gmail.com
+- Password: p53765\_
+
+## Instalación y Ejecución
+
+1. Clona este repositorio a tu máquina local.
+2. Navega al directorio del proyecto.
+3. Ejecuta `npm install` para instalar las dependencias.
+4. Ejecuta `npm run dev` para iniciar el servidor de desarrollo.
+5. Abre tu navegador y visita `http://localhost:3000` para ver la aplicación en acción.
+
+## Contribuciones
+
+Las contribuciones son bienvenidas. Si encuentras áreas de mejora, problemas o nuevas características que te gustaría agregar, no dudes en abrir un "Issue" o enviar un "Pull Request".
+
+## Licencia
+
+Este proyecto está bajo la licencia [MIT](LICENSE).

@@ -17,7 +17,7 @@ const index = () => {
     >
       <SimpleCards data={simpleCardsData} />
       <Trends data={trendsData} />
-      <div className="mt-10 grid gap-4 grid-cols-1 lg:grid-cols-2">
+      <div className="mt-10 mb-10 sm:mb-0 grid gap-4 grid-cols-1 lg:grid-cols-2">
         <div>
           <Tickets data={ticketsData} />
         </div>

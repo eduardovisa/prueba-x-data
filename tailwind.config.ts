@@ -37,8 +37,10 @@ module.exports = {
         '582': '582px',
         '710': '710px',
       },
+      fontFamily: {
+        Mulish: ['Mulish', 'sans-serif'],
+      },
     },
-    fontFamily: {},
   },
   plugins: [],
 };

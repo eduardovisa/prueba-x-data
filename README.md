@@ -12,7 +12,6 @@ El proyecto utiliza las siguientes tecnologías y herramientas:
 
 - Next.js (React) para la creación del proyecto.
 - Tailwind CSS para la construcción de estilos.
-- DaisyUI como extensión de Tailwind CSS para la creación de componentes. (También se permite la creación directa de componentes con Tailwind CSS).
 - TypeScript para la tipificación estática.
 
 ## Criterios de Aceptación
@@ -22,7 +21,6 @@ El proyecto utiliza las siguientes tecnologías y herramientas:
 - Se deben crear todos los componentes utilizando classNames de Tailwind CSS, evitando el uso de archivos .css.
 - Se debe mantener el código legible y organizado. Se sugiere separar los componentes en archivos individuales, evitando exceder las 50 líneas por archivo.
 - La estructura de directorios debe seguir las convenciones y se sugiere la organización en carpetas como `pages`, `src/components`, `src/hooks`, `src/utils`, `src/types`, etc.
-- No es necesario completar el 100% del ejercicio, dado el plazo de tiempo limitado. El proyecto incompleto servirá como referencia para identificar áreas de mejora y crecimiento.
 
 ## Live Preview
 

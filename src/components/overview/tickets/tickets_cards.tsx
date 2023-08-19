@@ -14,7 +14,7 @@ const TicketsCards: React.FC<{ data: CardsProps[] }> = (data) => {
             {info.label}
           </h1>
         </div>
-        <div className="flex-1 flex justify-end items-center">
+        <div className="flex-none flex justify-end items-center">
           <h1 className="text-[14px] font-[600] text-secondary-gray-light tracking-[0.2px] mt-6 leading-[20px]">
             {info.secondaryLabel}
           </h1>

@@ -1,8 +1,12 @@
-import Login from '@/components/login_form';
+import LoginLayout from '@/components/layouts/login_layout';
+import Login from '@/components/form/login_form';
 
 const index = () => {
-  
-  return <Login />;
+  return (
+    <LoginLayout>
+      <Login />
+    </LoginLayout>
+  );
 };
 
 export default index;

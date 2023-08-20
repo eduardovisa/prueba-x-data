@@ -3,20 +3,19 @@ import TrendsCards from './trends_cards';
 import { DividerMini } from '@/svg/divider';
 import imgGraph from '@/assets/trends_graph.png';
 import Image from 'next/image';
+import HeaderCard from '../header_card';
 
 const Trends: React.FC<{ data: CardsProps[] }> = (data) => {
   return (
     <div className="flex mt-10 border rounded-[8px] bg-white border-primary-gray-light justify-center">
-      <div className="flex-1 flex flex-col m-10">
+      <div className="flex-1 flex flex-col">
         <div className="flex-none">
-          <h1 className="text-[19px] font-[700] text-primary-black mb-2 tracking-[0.4px] leading-normal">
-            Today’s trends
-          </h1>
-          <h1 className="text-[12px] font-[400] text-secondary-gray-light tracking-[0.1px] leading-[16px]">
-            as of 25 May 2019, 09:41 PM
-          </h1>
+          <HeaderCard
+            label="Today’s trends"
+            caption="as of 25 May 2019, 09:41 PM"
+          />
         </div>
-        <div className="flex flex-none mb-6 mt-2 justify-center lg:justify-end">
+        <div className="flex flex-none mb-6 justify-center lg:justify-end lg:mr-10">
           <div className="flex items-center mr-10">
             <DividerMini color="#3751FF" />
             <h1 className="ml-2 text-[12px] font-[600] text-secondary-gray-light tracking-[0.1px] leading-normal">
@@ -31,7 +30,7 @@ const Trends: React.FC<{ data: CardsProps[] }> = (data) => {
           </div>
         </div>
         <div
-          className={`flex-1 h-full w-full bg-center bg-contain bg-no-repeat`}
+          className={`mb-5 flex-1 h-full w-full bg-center bg-contain bg-no-repeat`}
           style={{ backgroundImage: `url(${imgGraph.src})`, width: '100%' }}
         >
           <Image

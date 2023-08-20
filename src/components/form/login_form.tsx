@@ -19,7 +19,7 @@ const Login = () => {
     >
       <Input
         name="email"
-        type="email"
+        type="text"
         placeholder="Email address"
         label="EMAIL"
       />

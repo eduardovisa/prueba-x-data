@@ -36,6 +36,7 @@ const Input = (props: InputProps) => {
           id={name}
           placeholder={placeholder}
           required={false}
+          formNoValidate
           className="bg-input-bg border border-input-border rounded-[8px] placeholder-input-placeholder/40 h-42 w-316 sm:w-536 lg:w-316 text-gray-900 focus:ring-primary-600 focus:border-primary-600 block w-full p-2.5 focus:ring-blue-500 focus:border-blue-500"
         />
         {isPasswordType && (

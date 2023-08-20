@@ -1,6 +1,7 @@
 import { NavIconProps } from '@/types/components/nav';
 
 // Return the icon
+// Don't delete
 export const NavIcon = ({ children, color, opacity }: NavIconProps) => {
   return (
     <svg

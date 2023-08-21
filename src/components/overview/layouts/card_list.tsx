@@ -1,6 +1,6 @@
 import { HeaderCardProps } from '@/types/components/overview';
 import { LayoutProps } from '@/types/components/content_layout';
-import HeaderCard from '../header_card';
+import HeaderCard from '../shared/header_card';
 
 const CardList = ({
   children,

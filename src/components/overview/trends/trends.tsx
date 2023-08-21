@@ -3,7 +3,7 @@ import TrendsCards from './trends_cards';
 import { DividerMini } from '@/svg/divider';
 import imgGraph from '@/assets/trends_graph.png';
 import Image from 'next/image';
-import HeaderCard from '../header_card';
+import HeaderCard from '../shared/header_card';
 
 const Trends: React.FC<{ data: CardsProps[] }> = (data) => {
   return (
